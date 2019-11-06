@@ -1,11 +1,11 @@
-home_yandex5:
+home:
  build: .
  env_file: token.env
  environment:
    - SUBDOMAIN="home"
  restart: always
 
-www_yandex5:
+www:
  build: .
  env_file: token.env
  environment:
