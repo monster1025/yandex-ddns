@@ -1,4 +1,4 @@
-name: CI
+name: Build Docker Image
 
 on: [push]
 
@@ -11,4 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build a docker image
       run: |
+        mv token.env.sample token.env
         docker-compose build home
